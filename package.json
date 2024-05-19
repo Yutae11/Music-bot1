@@ -1,3 +1,4 @@
+
 {
     "name": "music-bot",
     "main": "main.js",
@@ -17,6 +18,7 @@
         "ffmpeg-static": "^5.0.2",
         "ms": "^3.0.0-canary.1",
         "play-dl": "^1.9.6",
-        "translate": "^3.0.0"
+        "translate": "^3.0.0",
+        "dotenv": "^16.0.3"  // Add dotenv here
     }
 }

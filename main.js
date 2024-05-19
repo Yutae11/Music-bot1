@@ -1,5 +1,6 @@
 const { Player } = require('discord-player');
 const { Client, GatewayIntentBits } = require('discord.js');
+require('dotenv').config(); // Load environment variables
 
 global.client = new Client({
     intents: [
@@ -19,4 +20,12 @@ player.extractors.loadDefault();
 
 require('./loader');
 
-client.login(client.config.app.token);
+console.log('Bot Token:', client.config.app.token); // Log the token for debugging
+
+client.login(client.config.app.token)
+    .then(() => {
+        console.log('Bot logged in successfully!');
+    })
+    .catch(err => {
+        console.error('Failed to login:', err);
+    });

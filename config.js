@@ -3,7 +3,7 @@ module.exports = {
         token: 'xxx',
         playing: 'by the Community ❤️',
         global: true,
-        guild: 'xxx',
+        guild: 'false',
         extraMessages: false,
         loopMessage: false,
         lang: 'en'

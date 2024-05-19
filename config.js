@@ -1,6 +1,6 @@
 module.exports = {
     app: {
-        token: 'MTIzOTg2Nzg2MjA1OTk3NDcyNw.Gt4syB.P3IdjDzCcudjplKIfhfuAUIvLR_dA6G9GjRxc8',
+        token: process.env.BOT_TOKEN,
         playing: 'by the Community ❤️',
         global: true,
         guild: 'false',
@@ -8,7 +8,6 @@ module.exports = {
         loopMessage: false,
         lang: 'en'
     },
-
     opt: {
         DJ: {
             enabled: false,
